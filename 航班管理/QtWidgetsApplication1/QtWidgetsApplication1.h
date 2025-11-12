@@ -1,0 +1,20 @@
+#pragma once
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
+#include <QtSql/QSqlError>
+#include <QMessageBox>
+#include <QtWidgets/QMainWindow>
+#include "ui_QtWidgetsApplication1.h"
+
+class QtWidgetsApplication1 : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    QtWidgetsApplication1(QWidget* parent = nullptr);
+    ~QtWidgetsApplication1();
+
+private:
+    Ui::QtWidgetsApplication1Class ui;
+};
+

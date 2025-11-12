@@ -1,0 +1,61 @@
+﻿   Qt/MSBuild: 3.4.1.0
+   Qt: 6.9.3
+  uic QtWidgetsApplication1.ui
+  QtWidgetsApplication1.cpp
+  main.cpp
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x112 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x116 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x117 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x120 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x123 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x125 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x126 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x127 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x128 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x129 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x12a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x12b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x12e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x12f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1d2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1dc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1de 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1df 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1e1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1e8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1e9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1eb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1ee 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1ef 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1fb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1fc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x1ff 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x205 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x207 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x208 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3e3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3e6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3ea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3eb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3ec 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3ed 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3f0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3f2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3f3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3f5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3f9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3fb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x3fd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x402 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x403 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x404 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x409 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\Desktop\QtWidgetsApplication1\QtWidgetsApplication1\QtWidgetsApplication1.cpp(1,1): warning C4828: 文件包含在偏移 0x40a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  moc_QtWidgetsApplication1.cpp
+  QtWidgetsApplication1.vcxproj -> D:\Desktop\QtWidgetsApplication1\x64\Debug\QtWidgetsApplication1.exe
