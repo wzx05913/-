@@ -37,6 +37,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         controller/controlleruser.h controller/controlleruser.cpp
 
+        utils/directorymanager.h utils/directorymanager.cpp
+
         view/logindialog.h view/logindialog.cpp view/logindialog.ui
         view/registerdialog.h view/registerdialog.cpp view/registerdialog.ui
     )

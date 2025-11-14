@@ -5,4 +5,5 @@
 - model目录：与数据库的交互
 - controller目录：业务逻辑
 - view目录：视图、ui
+- utils目录：工具类（包含目录管理功能）
 

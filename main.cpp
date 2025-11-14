@@ -4,10 +4,16 @@
 #include <QSqlError>
 #include "view/mainwindow.h"
 #include "model/companymodel.h"
+#include "utils/directorymanager.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    //创建必要的应用程序目录
+    DirectoryManager::createDirectoryRecursively("data");
+    DirectoryManager::createDirectoryRecursively("data/exports");
+    DirectoryManager::createDirectoryRecursively("data/logs");
 
     //连接数据库
     QSqlDatabase db=QSqlDatabase::addDatabase("QODBC");//使用ODBC驱动
