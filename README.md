@@ -1,8 +1,7 @@
 # 航班管理系统
-- 使用的IDE：QT Creator
-- 通过CMakeLIST.txt构建
-- entity目录：实体
-- model目录：与数据库的交互
-- controller目录：业务逻辑
-- view目录：视图、ui
-
+- 工具：QT Creator, MinGW
+- 语言：c++
+- 基本功能
+  - 航班管理
+  - 机票管理
+  - 支持多人同时使用 
