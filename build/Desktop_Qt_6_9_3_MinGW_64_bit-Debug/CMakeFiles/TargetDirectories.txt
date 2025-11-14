@@ -1,0 +1,9 @@
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tickets.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tickets_autogen_timestamp_deps.dir
+D:/Emma/obsidian/SEPracPrimary/tickets/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tickets_autogen.dir
