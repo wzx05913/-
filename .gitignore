@@ -1,0 +1,32 @@
+# CodeQL
+_codeql_detected_source_root
+
+# Build directories
+build/
+cmake-build-*/
+
+# Qt generated files
+*.pro.user
+*.pro.user.*
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Compiled files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test directories
+data/
+data/exports/
+data/logs/
