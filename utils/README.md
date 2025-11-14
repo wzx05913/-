@@ -41,3 +41,15 @@ if (DirectoryManager::directoryExists("data")) {
 - 支持相对路径和绝对路径
 - 如果目录已存在，创建操作会返回成功（true）
 - 错误信息通过 `getLastError()` 获取
+
+### 实际应用场景
+
+1. **应用程序初始化时创建数据目录**（见 main.cpp）
+2. **导出功能需要创建临时目录**
+3. **日志系统需要创建日志目录**
+4. **用户数据按日期组织时创建日期目录**
+
+### 方法区别
+
+- `createDirectory()` - 只创建单层目录，父目录必须存在
+- `createDirectoryRecursively()` - 递归创建目录，会自动创建所有不存在的父目录（推荐使用）
