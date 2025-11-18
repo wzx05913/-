@@ -29,23 +29,23 @@ void User::setUserType(const QString& _type){
     UserType=_type;
 }
 
-int User::getUserID(){
+int User::getUserID()const{
     return UserID;
 }
 
-QString User::getUserName(){
+QString User::getUserName()const{
     return UserName;
 }
 
-QString User::getHashPwd(){
+QString User::getHashPwd()const{
     return HashPwd;
 }
 
-QByteArray User::getSalt(){
+QByteArray User::getSalt()const{
     return Salt;
 }
 
-QString User::getUserType(){
+QString User::getUserType()const{
     return UserType;
 }
 

@@ -35,7 +35,11 @@ bool ClientModel::InsertClient(const QString& name,const QString& hashpwd,const 
     }
     qrycli.finish();
 
-    db.commit();
+    if(!db.commit()){
+        err="提交失败："+db.lastError().text();
+        db.rollback();
+        return 0;
+    }
     err="";
     return 1;
 }

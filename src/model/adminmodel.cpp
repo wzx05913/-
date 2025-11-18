@@ -3,17 +3,17 @@
 #include <QSqlError>
 #include "adminmodel.h"
 
-bool AdminModel::GetCompanyName(int id,QString& cname,QString& err){
+bool AdminModel::GetCompanyID(int id,int& cid,QString& err){
     QSqlDatabase db=QSqlDatabase::database();
     QSqlQuery qryadm(db);
-    qryadm.prepare("SELECT c.CompanyName FROM admins a JOIN companies c ON a.CompanyID=c.CompanyID WHERE a.AdminID=:id");
+    qryadm.prepare("SELECT c.CompanyID FROM admins a JOIN companies c ON a.CompanyID=c.CompanyID WHERE a.AdminID=:id");
     qryadm.bindValue(":id",id);
     if(!qryadm.exec()){
         err=qryadm.lastError().text();
         return 0;
     }
     if(qryadm.next()){
-        cname=qryadm.value("CompanyName").toString();
+        cid=qryadm.value("CompanyID").toInt();
         err="";
         return 1;
     }
@@ -72,7 +72,11 @@ bool AdminModel::InsertAdmin(const QString& name,const QString& hashpwd,const QB
     }
     qryadm.finish();
 
-    db.commit();
+    if(!db.commit()){
+        err="提交失败："+db.lastError().text();
+        db.rollback();
+        return 0;
+    }
     err="";
     return 1;
 }

@@ -1,10 +1,10 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
-#include <vector>
 #include "companymodel.h"
+#include "planemodel.h"
 #include "../entity/company.h"
-extern std::vector<Company*> companies;
+extern std::map<int,Company*> companies;
 
 void CompanyModel::LoadCompanies(){
     QSqlDatabase db=QSqlDatabase::database();
@@ -13,10 +13,13 @@ void CompanyModel::LoadCompanies(){
     while(qrycpy.next()){
         int id=qrycpy.value("CompanyID").toInt();
         QString name=qrycpy.value("CompanyName").toString();
-        companies.push_back(new Company(id,name));
+        Company* ptr=new Company(id,name);
+        QString err;
+        if(!PlaneModel::GetPlanesByCompanyID(id,ptr->Planes,err)) qDebug()<<err;
+        companies[id]=ptr;
     }
 }
 void CompanyModel::ReleaseCompanies(){
-    for(auto ptr:companies) delete ptr;
+    for(auto& pr:companies) delete pr.second;
     companies.clear();
 }

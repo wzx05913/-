@@ -10,6 +10,10 @@ Company::Company(int _id,const QString& _name)
 
 Company::~Company(){}
 
+int Company::getCompanyID(){
+    return CompanyID;
+}
+
 QString Company::getCompanyName(){
     return CompanyName;
 }

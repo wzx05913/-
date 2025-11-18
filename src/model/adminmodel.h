@@ -4,7 +4,7 @@
 
 class AdminModel{
 public:
-    static bool GetCompanyName(int id,QString& cname,QString& err);
+    static bool GetCompanyID(int id,int& cid,QString& err);
     static bool InsertAdmin(const QString& name,const QString& hashpwd,const QByteArray& salt,const QString& cname,QString& err);
 };
 

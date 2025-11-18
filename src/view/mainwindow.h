@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTimer>
+#include <QDataWidgetMapper>
 #include "../controller/controlleruser.h"
 
 QT_BEGIN_NAMESPACE
@@ -22,7 +23,8 @@ protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 private slots:
     void on_btnLogin_clicked();
-    void updateUserStatus(const QString& type,const QString& name);
+    void updateAdminStatus(const QString& name);
+    void updateClientStatus(const QString& name);
     void clearUserStatus();
 private:
     Ui::MainWindow *ui;

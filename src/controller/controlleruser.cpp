@@ -28,14 +28,15 @@ bool ControllerUser::LoginUser(const QString& name,const QString& ori_pwd,QStrin
     }
     if(usr.getUserType()=="client"){
         curUser=new Client(usr.getUserID(),name,encry_pwd,usr.getSalt(),"client");
+        emit clientLoggedIn(name);
     }
     else if(usr.getUserType()=="admin"){
-        QString cname;
-        if(!AdminModel::GetCompanyName(usr.getUserID(),cname,err)) return 0;
-        curUser=new Admin(usr.getUserID(),name,encry_pwd,usr.getSalt(),"admin",cname);
+        int cid=-1;
+        if(!AdminModel::GetCompanyID(usr.getUserID(),cid,err)) return 0;
+        curUser=new Admin(usr.getUserID(),name,encry_pwd,usr.getSalt(),"admin",cid);
+        emit adminLoggedIn(name);
     }
     err="";
-    emit userLoggedIn(usr.getUserType(),name);
     return 1;
 }
 

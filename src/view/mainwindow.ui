@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>907</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="btnLogin">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>40</y>
+      <x>830</x>
+      <y>30</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QLabel" name="labelUser">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>20</y>
+      <x>830</x>
+      <y>10</y>
       <width>54</width>
       <height>16</height>
      </rect>
@@ -40,13 +40,15 @@
      <string>未登录</string>
     </property>
    </widget>
+   <zorder>labelUser</zorder>
+   <zorder>btnLogin</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>907</width>
      <height>22</height>
     </rect>
    </property>

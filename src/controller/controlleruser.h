@@ -13,7 +13,8 @@ public:
     bool LoginUser(const QString& name,const QString& ori_pwd,QString& err);
     void LogoutUser();
 signals:
-    void userLoggedIn(const QString& type,const QString& name);
+    void clientLoggedIn(const QString& name);
+    void adminLoggedIn(const QString& name);
     void userLoggedOut();
 };
 #endif // CONTROLLERUSER_H

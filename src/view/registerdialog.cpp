@@ -5,7 +5,7 @@
 #include "registerdialog.h"
 #include "ui_registerdialog.h"
 #include "../entity/company.h"
-extern std::vector<Company*> companies;
+extern std::map<int,Company*> companies;
 
 
 RegisterDialog::RegisterDialog(QWidget *parent,ControllerUser *_controlleruser)
@@ -14,8 +14,8 @@ RegisterDialog::RegisterDialog(QWidget *parent,ControllerUser *_controlleruser)
     , controlleruser(_controlleruser)
 {
     ui->setupUi(this);
-    for(Company* ptr:companies){
-        ui->cbxCompanyName->addItem(ptr->getCompanyName());
+    for(const auto& pr:companies){
+        ui->cbxCompanyName->addItem(pr.second->getCompanyName());
     }
     ui->labelCompanyName->hide();
     ui->cbxCompanyName->hide();

@@ -18,11 +18,11 @@ public:
     void setHashPwd(const QString& _hashpwd);
     void setSalt(const QByteArray& _salt);
     void setUserType(const QString& _type);
-    int getUserID();
-    QString getUserName();
-    QString getHashPwd();
-    QByteArray getSalt();
-    QString getUserType();
+    int getUserID()const;
+    QString getUserName()const;
+    QString getHashPwd()const;
+    QByteArray getSalt()const;
+    QString getUserType()const;
     static QByteArray GenerateSalt(int length=16);
     static QString Hash(const QString& pwd,const QByteArray& salt);
 };
