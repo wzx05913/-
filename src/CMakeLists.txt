@@ -46,6 +46,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         entity/flight.h entity/flight.cpp
         view/flightwidget.h view/flightwidget.cpp view/flightwidget.ui
         entity/plane.h entity/plane.cpp
+        model/flightfilterproxymodel.h model/flightfilterproxymodel.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET tickets APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

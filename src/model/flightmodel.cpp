@@ -1,3 +1,5 @@
+#include <QSqlDatabase>
+#include <QSqlQuery>
 #include <QSqlRecord>
 #include <QSqlError>
 #include "flightmodel.h"
@@ -40,6 +42,7 @@ bool FlightModel::SelectByRow(int row,Flight& flight,QString& err){
         return 0;
     }
     QSqlRecord rec=this->record(row);
+    flight.setFlightID(rec.value("FlightID").toInt());
     flight.setCompanyID(rec.value("CompanyID").toInt());
     flight.setPlaneID(rec.value("PlaneID").toInt());
     flight.setSeatCnt(rec.value("SeatCnt").toInt());
@@ -96,6 +99,47 @@ bool FlightModel::ModifyRow(int row,const Flight&flight,QString& err){
     if(!this->submitAll()){
         err=this->lastError().text();
         this->revertAll();
+        return 0;
+    }
+    err="";
+    return 1;
+}
+bool FlightModel::CheckAddConflict(const Flight& flight,QString& err)const{
+    QSqlDatabase db=QSqlDatabase::database();
+    QSqlQuery qryfli(db);
+    qryfli.prepare("SELECT StartTime,EndTime FROM flights WHERE PlaneID=:pid AND (StartTime<=:etim AND EndTime>=:stim) LIMIT 1");
+    qryfli.bindValue(":pid",flight.getPlaneID());
+    qryfli.bindValue(":etim",flight.getEndTime());
+    qryfli.bindValue(":stim",flight.getStartTime());
+    if(!qryfli.exec()){
+        err="查询冲突航班失败："+qryfli.lastError().text();
+        return 0;
+    }
+    if(qryfli.next()){
+        err=QString("飞机在 %1 - %2 时间段有其他飞行任务")
+                  .arg(qryfli.value("StartTime").toDateTime().toString("yyyy-MM-dd hh:mm")
+                  ,qryfli.value("EndTime").toDateTime().toString("yyyy-MM-dd hh:mm"));
+        return 0;
+    }
+    err="";
+    return 1;
+}
+bool FlightModel::CheckUpdConflict(const Flight& flight,QString& err)const{
+    QSqlDatabase db=QSqlDatabase::database();
+    QSqlQuery qryfli(db);
+    qryfli.prepare("SELECT StartTime,EndTime FROM flights WHERE PlaneID=:pid AND (StartTime<=:etim AND EndTime>=:stim) AND FlightID!=:fid LIMIT 1");
+    qryfli.bindValue(":pid",flight.getPlaneID());
+    qryfli.bindValue(":etim",flight.getEndTime());
+    qryfli.bindValue(":stim",flight.getStartTime());
+    qryfli.bindValue(":fid",flight.getFlightID());
+    if(!qryfli.exec()){
+        err="查询冲突航班失败："+qryfli.lastError().text();
+        return 0;
+    }
+    if(qryfli.next()){
+        err=QString("飞机在 %1 - %2 时间段有其他飞行任务")
+                  .arg(qryfli.value("StartTime").toDateTime().toString("yyyy-MM-dd hh:mm")
+                       ,qryfli.value("EndTime").toDateTime().toString("yyyy-MM-dd hh:mm"));
         return 0;
     }
     err="";

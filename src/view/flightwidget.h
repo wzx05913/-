@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QDataWidgetMapper>
 #include "../model/flightmodel.h"
+#include "../model/flightfilterproxymodel.h"
 #include "../controller/controllerflight.h"
 
 namespace Ui {
@@ -18,7 +19,7 @@ public:
     explicit FlightWidget(QWidget *parent = nullptr);
     ~FlightWidget();
 private:
-    void update_cbxPlaneName(int cid);
+    void setAdminAccess();
 public slots:
     void SetTouristMode();
     void SetAdminMode(const QString& name);
@@ -31,9 +32,14 @@ private slots:
     void on_btnDeleteFlight_clicked();
     void on_btnModifyFlight_clicked();
 
+    void on_btnSearch_clicked();
+
+    void on_btnSearchClear_clicked();
+
 private:
     Ui::FlightWidget *ui;
     FlightModel *flightmodel;
+    FlightFilterProxyModel *flightproxymodel;
     ControllerFlight *controllerflight;
     QDataWidgetMapper *flightmodelmapper;
 };

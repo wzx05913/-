@@ -4,6 +4,9 @@ Flight::Flight() {}
 
 Flight::~Flight(){}
 
+void Flight::setFlightID(int _fid){
+    FlightID=_fid;
+}
 void Flight::setCompanyID(int _cid){
     CompanyID=_cid;
 }
@@ -29,6 +32,9 @@ void Flight::setDuration(double _dur){
     Duration=_dur;
 }
 
+int Flight::getFlightID()const{
+    return FlightID;
+}
 int Flight::getCompanyID()const{
     return CompanyID;
 }

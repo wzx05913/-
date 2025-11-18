@@ -5,6 +5,7 @@
 class Flight
 {
 private:
+    int FlightID;
     int CompanyID;
     int PlaneID;
     int SeatCnt;//剩余座位数
@@ -17,6 +18,7 @@ private:
 public:
     Flight();
     virtual ~Flight();
+    void setFlightID(int _fid);
     void setCompanyID(int _cid);
     void setPlaneID(int _pid);
     void setSeatCnt(int _seatcnt);
@@ -25,6 +27,7 @@ public:
     void setStartTime(const QDateTime& _time);
     void setEndTime(const QDateTime& _time);
     void setDuration(double _dur);
+    int getFlightID()const;
     int getCompanyID()const;
     int getPlaneID()const;
     int getSeatCnt()const;
